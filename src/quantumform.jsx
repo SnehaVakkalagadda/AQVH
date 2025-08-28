@@ -10,7 +10,7 @@ function QuantumForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("https://aqvh-backend.onrender.com", {
+      const response = await axios.post("https://aqvh-backend.onrender.com/api/send", {
         bits,
         shots: parseInt(shots),
       });
